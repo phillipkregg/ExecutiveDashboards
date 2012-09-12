@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ExecutiveDashboards</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <%= csrf_meta_tags %>
+  
+</head>
+<body>
+	
+	
+	
+	<div class="container">	
+		
+		<div id="nav_container">
+			<ul id="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Site Map</a></li>
+				<li><a href="#">Job Search</a></li>
+				<li><a href="#">Preferences</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Logout</a></li>
+				
+			</ul>
+		</div>
+		
+		<div id="logo"></div>
+		<img class="logo_image" src="/assets/workcenters_new_logo_small.png">
+		
+		<%= yield %>
+	</div>
+
+
+</body>
+</html>
