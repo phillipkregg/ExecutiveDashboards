@@ -17,26 +17,42 @@
 
 $(function() {
 	
-	$("span.view_more").bind("click", function(){	
 		
-		var link = $(this);
-		
-		var box = $(this).parent().siblings().find(".no_display");
-				
-		box.slideToggle("slow", function(){
-			if($(this).css("display") == "none") {
-				link.html("<a>view more</a>");
-			} else if($(this).css("display") == "block") {
-				link.html("<a>hide</a>");
-			}
+	
+		$("span.view_more").bind("click", function(e){	
+			
+			e.preventDefault();
+			
+			var link = $(this);
+			
+			var box = $(this).parent().siblings().find(".no_display");
 					
+			box.slideToggle("fast", function(){
+				if($(this).css("display") == "none") {
+					link.html("<a>view more</a>");
+				} else if($(this).css("display") == "block") {
+					link.html("<a>hide</a>");
+				}
+				$('html, body').animate({ 
+			      scrollTop: $(box).offset().top 
+			  }, 1000);
+						
+			});
+			
 		});
 		
-	});
+		
+		$("#score_card_grade li a").popover();
+		
+		
+		
+		
+		
 	
 	
-	$("#score_card_grade li a").popover();
 	
+	
+		
 	
 }); // end jQuery document.ready function
 

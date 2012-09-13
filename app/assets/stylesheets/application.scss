@@ -58,34 +58,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 
 /* universal */
 
-html {
-	height: 100%;
-  overflow-y: scroll;
-  
-  
-}
 
-body {
-	height: 100%;
-  padding-top: 60px;
-  @include background_gradient;
-  
-}
-
-section {
-  overflow: auto;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.center {
-  text-align: center;
-}
-
-.center h1 {
-  margin-bottom: 10px;
+body {	
+  	//padding-top: 10px;  	
+  	@include background_gradient;
+  	
 }
 
 
@@ -214,3 +191,39 @@ span.view_more {
 }
 
 
+
+
+ul.graph
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.graph li
+{
+	margin-bottom: .5em;
+	padding: .2em;
+	background: #600;
+	color: #fff;
+}
+
+ul.graph li.percent20
+{
+	background: url('/assets/graph20.jpg') repeat-y 20% 0;
+}
+
+ul.graph li.percent40
+{
+	background: url('/assets/graph40.jpg') repeat-y 40% 0;
+}
+
+ul.graph li.percent60
+{
+	background: url('/assets/graph60.jpg') repeat-y 60% 0;
+}
+
+ul.graph li.percent80
+{
+	background: url('/assets/graph80.jpg') repeat-y 80% 0;
+}
