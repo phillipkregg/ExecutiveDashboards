@@ -156,12 +156,12 @@ img.logo_image {
 
 
 .green_header {	
-	padding: 5px;
+	padding: 10px;
 	border: 1px solid #666;
 	margin-top: 20px;
 	color: white;
 	font-size: 1.5em;
-	height: 30px;
+	height: 25px;
 	@include border-radius(4px 4px 0 0);
 	@include green_gradient;
 		
