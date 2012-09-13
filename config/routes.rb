@@ -1,4 +1,8 @@
 ExecutiveDashboards::Application.routes.draw do
+  get "home/page2"
+  
+  get "home/page3"
+
   get "home/index"
 
   # The priority is based upon order of creation:
