@@ -72,9 +72,10 @@ body {
 
 .container {
 	margin-top: 40px;
+	
 	@include border-radius(10px);
 	@include box-shadow(0 0 5px 2px hsla(0, 0%, 0%, 0.45));
-	padding: 10px;
+	padding: 10px 10px 40px 10px;
 	background: white;
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
@@ -167,7 +168,7 @@ img.logo_image {
 }
 
 .gray_border {	
-	
+	padding: 10px;
 	border: 1px solid #666;
 	
 	@include border-radius(0 0 5px 5px);
@@ -190,6 +191,11 @@ span.view_more {
 	
 }
 
+
+#pie_chart {		
+	width: 130px;	
+	height: auto;
+}
 
 
 
